@@ -1,0 +1,5 @@
+{{#if (await @model.anyFullCheck)}}
+  Full
+{{/if}}
+
+<button {{on "click" (fn @delete @model)}}>delete</button>
