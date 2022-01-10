@@ -5,6 +5,6 @@ export default class ApplicationController extends Controller {
   @action
   delete(model) {
     model.unloadRecord();
-    model.checks.then(checks => console.log(checks));
+    // model.checks.then(checks => console.log(checks));
   }
 }

@@ -11,6 +11,7 @@ export default class ApplicationRoute extends Route {
           id: 1,
           type: 'test',
           attributes: {
+            name: 'test',
           },
           relationships: {
             checks : {

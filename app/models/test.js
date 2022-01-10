@@ -1,8 +1,10 @@
-import Model, { hasMany } from '@ember-data/model';
+import Model, { attr, hasMany } from '@ember-data/model';
 import { computed } from '@ember/object';
 
 export default class TestModel extends Model {
-  @hasMany('check') checks;
+  @attr('string') name;
+
+  @hasMany('check', { inverse: null }) checks;
 
   @computed('checks.@each.full')
   get anyFullCheck() {

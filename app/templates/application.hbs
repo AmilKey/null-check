@@ -1,1 +1,9 @@
 <Test @model={{this.model}} @delete={{action this.delete}}/>
+
+<div>name: {{this.model.name}}</div>
+
+<ul>
+  {{#each this.model.checks as |check|}}
+    <li>{{check.full}}</li>
+  {{/each}}
+</ul>
